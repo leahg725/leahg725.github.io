@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Leah Gazes - Web Developer</title>
+        <meta name="description" content="Hey I'm Leah and I'm a web developer." />
+        <meta http-equiv="Content-Type" content="text/html"; charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="dist/styles/master.css">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Arimo:400,700" rel="stylesheet">
+        <script src="https://use.fontawesome.com/130277de9d.js"></script>
+        <script src="js/scrollto.js"></script>
+        <script src="js/navopen.js"></script>
+    </head>
+
+    <body>
+        <div class="Navigation-overlay closed"></div>
+        <nav class="Navigation">
+            <div class="Navigation-wrapper">
+                <div class="Navigation-banner">
+                    <div class="Navigation-home_link_wrapper">
+                        <a href="/" class="Navigation-home_link">LG</a>
+                    </div>
+                    <div class="Navigation-menu_toggle_wrapper">
+                        <button class="Navigation-menu_toggle">
+                            <span class="Navigation-menu_toggle_line"></span>
+                            <span class="Navigation-menu_toggle_line"></span>
+                            <span class="Navigation-menu_toggle_line"></span>
+                            <span class="sr-only">Menu</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="Navigation-link_list_wrapper closed">
+                    <ul class="Navigation-link_list">
+                        <li class="Navigation-link_item"><a href="#about" data-smoothscroll class="Navigation-link">About</a></li>
+                        <li class="Navigation-link_item"><a href="#work" data-smoothscroll class="Navigation-link">Work</a></li>
+                        <li class="Navigation-link_item"><a href="#resume" data-smoothscroll class="Navigation-link">Resumé</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="Intro" id="about">
+            <div class="Container Intro-container">
+                <div class="Intro-image_wrapper">
+                    <img src="images/Leah.jpg" class="Intro-image">
+                </div>
+                <div class="Intro-content_wrapper">
+                    <h1 class="Intro-heading">Hi, I'm Leah</h1>
+                    <h2 class="Intro-subheading">I'm a web developer that works with WordPress and Drupal using HTML, PHP, CSS, and JavaScript.</h2>
+                    <div class="Intro-contact_info">
+                        <a href="mailto:lgazes725@gmail.com" class="Intro-email Intro-contact_link"><i class="fa fa-envelope-o"></i><span>Email Me</span></a>
+                    </div>
+                </div>
+                <div class="Intro-scroll_wrapper">
+                    <a href="#work" data-smoothscroll class="Intro-scroll_link">
+                        <div class="Intro-scroll">
+                            <div class="Intro-scroll_wheel"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="Skills" id="skills">
+            <div class="Container Skills-container">
+                <h2 class="Skills-title">Skills</h2>
+                <div class="Skills-block Skills-current">
+                    <h5 class="Skills-block--title">Current</h5>
+                    <ul class="Skills-list">
+                        <li class="Skills-list--item">HTML</li>
+                        <li class="Skills-list--item">CSS/LESS</li>
+                        <li class="Skills-list--item">PHP</li>
+                        <li class="Skills-list--item">JavaScript</li>
+                        <li class="Skills-list--item">jQuery</li>
+                        <li class="Skills-list--item">WordPress</li>
+                        <li class="Skills-list--item">Git</li>
+                        <li class="Skills-list--item">Gulp</li>
+                        <li class="Skills-list--item">Drupal 8</li>
+                    </ul>
+                </div>
+                <div class="Skills-block Skills-learning">
+                    <h5 class="Skills-block--title">Learning</h5>
+                    <ul class="Skills-list">
+                        <li class="Skills-list--item">React</li>
+                        <li class="Skills-list--item">Angular</li>
+                        <li class="Skills-list--item">SASS</li>
+                        <li class="Skills-list--item">Shopify</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="Work clearfix" id="work">
+            <h3 class="Work-heading">Work</h2>
+            <div class="Work-wrapper">
+                <div class="Work-item">
+                    <div class="Work-item_wrapper">
+                        <a href="http://sunpowerbyinfinitysolar.com/" target="_blank" class="Work-item_link" style="background-image: url('images/Infinity Solar.png');">
+                            <div class="Work-item_overlay">
+                                <h4 class="Work-item_name">Infinity Solar</h4>
+                            </div>
+                            <div class="Work-item_hover">
+                                <div class="Work-item_hover_content">
+                                    <p class="Work-item_hover_info">Wordpress - Collab</p>
+                                    <div class="Work-item_hover_icon">
+                                        <i class="fa fa-external-link" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="Work-item">
+                    <div class="Work-item_wrapper">
+                        <a href="http://ironsidecomputers.com/" target="_blank" class="Work-item_link" style="background-image: url('images/Ironside Computers.png');">
+                            <div class="Work-item_overlay">
+                                <h4 class="Work-item_name">Ironside Computers</h4>
+                            </div>
+                            <div class="Work-item_hover">
+                                <div class="Work-item_hover_content">
+                                    <p class="Work-item_hover_info">Wordpress / WooCommerce - Collab</p>
+                                    <div class="Work-item_hover_icon">
+                                        <i class="fa fa-external-link" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="Work-item">
+                    <div class="Work-item_wrapper">
+                        <a href="http://protononsite.org/" target="_blank" class="Work-item_link" style="background-image: url('images/Proton Onsite.png');">
+                            <div class="Work-item_overlay">
+                                <h4 class="Work-item_name">Proton Onsite</h4>
+                            </div>
+                            <div class="Work-item_hover">
+                                <div class="Work-item_hover_content">
+                                    <p class="Work-item_hover_info">Drupal - Collab</p>
+                                    <div class="Work-item_hover_icon">
+                                        <i class="fa fa-external-link" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="Work-item">
+                    <div class="Work-item_wrapper">
+                        <a href="http://thestevensongroup.com/" target="_blank" class="Work-item_link" style="background-image: url('images/Stevenson Group.png');">
+                            <div class="Work-item_overlay">
+                                <h4 class="Work-item_name">The Stevenson Group</h4>
+                            </div>
+                            <div class="Work-item_hover">
+                                <div class="Work-item_hover_content">
+                                    <p class="Work-item_hover_info">WordPress - Collab</p>
+                                    <div class="Work-item_hover_icon">
+                                        <i class="fa fa-external-link" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="Work-item">
+                    <div class="Work-item_wrapper">
+                        <a href="http://bereadyli.org/" target="_blank" class="Work-item_link" style="background-image: url('images/Be Ready LI.png');">
+                            <div class="Work-item_overlay">
+                                <h4 class="Work-item_name">Be Ready LI</h4>
+                            </div>
+                            <div class="Work-item_hover">
+                                <div class="Work-item_hover_content">
+                                    <p class="Work-item_hover_info">WordPress - Collab</p>
+                                    <div class="Work-item_hover_icon">
+                                        <i class="fa fa-external-link" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="Work-item">
+                    <div class="Work-item_wrapper">
+                        <a href="http://buechelstone.com/" target="_blank" class="Work-item_link" style="background-image: url('images/Buechel Stone.png');">
+                            <div class="Work-item_overlay">
+                                <h4 class="Work-item_name">Buechel Stone</h4>
+                            </div>
+                            <div class="Work-item_hover">
+                                <div class="Work-item_hover_content">
+                                    <p class="Work-item_hover_info">WordPress - Collab</p>
+                                    <div class="Work-item_hover_icon">
+                                        <i class="fa fa-external-link" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="Work-item">
+                    <div class="Work-item_wrapper">
+                        <a href="http://zelosllc.com/" target="_blank" class="Work-item_link" style="background-image: url('images/Zelos.png');">
+                            <div class="Work-item_overlay">
+                                <h4 class="Work-item_name">Zelos LLC</h4>
+                            </div>
+                            <div class="Work-item_hover">
+                                <div class="Work-item_hover_content">
+                                    <p class="Work-item_hover_info">WordPress - Collab</p>
+                                    <div class="Work-item_hover_icon">
+                                        <i class="fa fa-external-link" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="Work-item">
+                    <div class="Work-item_wrapper">
+                        <a href="http://alliedreliability.com/" class="Work-item_link" style="background-image: url('images/Allied Reliability.png');">
+                            <div class="Work-item_overlay">
+                                <h4 class="Work-item_name">Allied Reliability</h4>
+                            </div>
+                            <div class="Work-item_hover">
+                                <div class="Work-item_hover_content">
+                                    <p class="Work-item_hover_info">WordPress - Collab</p>
+                                    <div class="Work-item_hover_icon">
+                                        <i class="fa fa-external-link" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="Work-item">
+                    <div class="Work-item_wrapper">
+                        <a href="http://harklinikken.com/" target="_blank" class="Work-item_link" style="background-image: url('images/Harklinikken.png');">
+                            <div class="Work-item_overlay">
+                                <h4 class="Work-item_name">Harklinikken</h4>
+                            </div>
+                            <div class="Work-item_hover">
+                                <div class="Work-item_hover_content">
+                                    <p class="Work-item_hover_info">WordPress</p>
+                                    <div class="Work-item_hover_icon">
+                                        <i class="fa fa-external-link" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="Work-item">
+                    <div class="Work-item_wrapper">
+                        <a href="http://originalterritory.com/" target="_blank" class="Work-item_link" style="background-image: url('images/Original Territory.png');">
+                            <div class="Work-item_overlay">
+                                <h4 class="Work-item_name">Original Territory</h4>
+                            </div>
+                            <div class="Work-item_hover">
+                                <div class="Work-item_hover_content">
+                                    <p class="Work-item_hover_info">WordPress</p>
+                                    <div class="Work-item_hover_icon">
+                                        <i class="fa fa-external-link" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="Resume clearfix" id="resume">
+            <h3 class="Resume-title">Resumé</h3>
+            <div class="Resume-download_link_wrapper">
+                <a href="Leah's_resumé.pdf" class="Resume-download_link" download>
+                    <i class="fa fa-download"></i>
+                    <span>Download Resumé</span>
+                </a>
+            </div>
+            <div class="Resume-section_wrapper">
+                <div class="Resume-section_inner">
+                    <div class="Resume-content_column clearfix">
+                        <div class="Resume-row clearfix">
+                            <div class="Resume-title_column">
+                                <div class="Resume-column_title_wrapper">
+                                    <p class="Resume-column_title">Education</p>
+                                </div>
+                            </div>
+                            <div class="Resume-info_column">
+                                <div class="Resume-info">
+                                    <p class="Resume-info_heading">Farmingdale State College</p>
+                                    <p class="Resume-info_subheading"><span class="Resume-highlight">Bachelor's Degree - Computer Programming &amp; Information Systems</span>, 2015</p>
+                                    <ul class="Resume-info_list">
+                                        <li class="Resume-info_list_item">
+                                            Cumulative GPA: <span class="Resume-highlight">3.42
+                                        </li>
+                                        <li class="Resume-info_list_item">
+                                            Deans List: <span class="Resume-highlight">Fall 2014</span>
+                                        </li>
+                                        <li class="Resume-info_list_item">
+                                            Computer Tech Club:
+                                        </li>
+                                        <ul class="Resume-info_list_level2">
+                                            <li class="Resume-info_list_item_level2">
+                                                Vice President, <span class="Resume-highlight">2014 - 2015</span>
+                                            </li>
+                                            <ul class="Resume-info_list_level3">
+                                                <li class="Resume-info_list_item_level3">
+                                                    Assist in setting up events, such as Local Area Network (LAN) parties.
+                                                </li>
+                                                <li class="Resume-info_list_item_level3">
+                                                    Invite guest speakers for presentations.
+                                                </li>
+                                                <li class="Resume-info_list_item_level3">
+                                                    Keep track of important records and information for events.
+                                                </li>
+                                            </ul>
+                                        </ul>
+                                    </ul>
+                                </div>
+                                <div class="Resume-info">
+                                    <p class="Resume-info_heading">Suffolk County Community College</p>
+                                    <p class="Resume-info_subheading"><span class="Resume-highlight">Associate's Degree - Liberal Arts</span>, 2012</p>
+                                    <ul class="Resume-info_list">
+                                        <li class="Resume-info_list_item">
+                                            Deans List: <span class="Resume-highlight">Fall 2011</span>, <span class="Resume-highlight">Spring 2012</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Resume-row clearfix">
+                            <div class="Resume-title_column">
+                                <div class="Resume-column_title_wrapper">
+                                    <p class="Resume-column_title">Experience</p>
+                                </div>
+                            </div>
+                            <div class="Resume-info_column">
+                                <div class="Resume-info">
+                                    <p class="Resume-info_heading">Huemor Designs | 1855 New Highway, Farmingdale, NY 11735</p>
+                                    <p class="Resume-info_subheading"><span class="Resume-highlight">Junior Front End Web Developer</span>, March 2016 - Present</p>
+                                    <ul class="Resume-info_list">
+                                        <li class="Resume-info_list_item">
+                                            Build custom responsive websites for clients using WordPress.
+                                        </li>
+                                        <li class="Resume-info_list_item">
+                                            Translate PSD’s into working code with HTML, LESS, PHP and JavaScript.
+                                        </li>
+                                        <li class="Resume-info_list_item">
+                                            Test websites for cross browser compatibility.
+                                        </li>
+                                        <li class="Resume-info_list_item">
+                                            Install plugins to suit our client’s needs.
+                                        </li>
+                                        <li class="Resume-info_list_item">
+                                            Help new team members to adapt to our techniques.
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="Resume-info">
+                                    <p class="Resume-info_heading">Huemor Designs</p>
+                                    <p class="Resume-info_subheading"><span class="Resume-highlight">Front End Web Developer Intern</span>, June 2015 - March 2016</p>
+                                    <ul class="Resume-info_list">
+                                        <li class="Resume-info_list_item">
+                                            Build custom responsive websites for clients using WordPress.
+                                        </li>
+                                        <li class="Resume-info_list_item">
+                                            Translate PSD’s into working code with HTML, LESS, PHP and JavaScript.
+                                        </li>
+                                        <li class="Resume-info_list_item">
+                                            Test websites for cross browser compatibility.
+                                        </li>
+                                        <li class="Resume-info_list_item">
+                                            Install plugins to suit our client’s needs.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="Resume-info">
+                                    <p class="Resume-info_heading">MedNet Technologies | 115 Broad Hollow Road, Melville, NY 11747</p>
+                                    <p class="Resume-info_subheading"><span class="Resume-highlight">Front End Web Developer Intern</span>, Summer 2015</p>
+                                    <ul class="Resume-info_list">
+                                        <li class="Resume-info_list_item">
+                                            Assisted in filling client web pages on WordPress.
+                                        </li>
+                                        <li class="Resume-info_list_item">
+                                            Edited images for web pages with Adobe Photoshop.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </body>
+    <footer class="Footer">
+        <p class="Footer-copyright">&copy; Leah Gazes 2017</p>
+        <ul class="Footer-social">
+            <li class="Footer-social_item"><a href="https://github.com/leahg725" target="_blank" class="fa fa-github"><span class="sr-only">LinkedIn</span></a></li>
+            <li class="Footer-social_item"><a href="https://www.linkedin.com/in/leahgazes/" target="_blank" class="fa fa-linkedin"><span class="sr-only">GitHub</span></a></li>
+        </ul>
+    </footer>
+</html>

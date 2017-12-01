@@ -1,0 +1,130 @@
+.Work {
+    .section-padding(@pb: 0; @ptbp: 60px; @pbbp: 0);
+}
+
+.Work-heading {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.Work-item {
+    .col(6; min; @vp-sm);
+}
+
+.Work-item_wrapper {
+    position: relative;
+    &:first-child, &:nth-child(2) {
+        margin-top: 0;
+    }
+    &:before {
+        content: '';
+        display: block;
+        padding-bottom: 70%;
+        @media (min-width: @vp-lg) {
+            padding-bottom: 60%;
+        }
+    }
+}
+
+.Work-item_link {
+    .link-revert();
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-weight: @font-weight_bold;
+
+    &:before {
+        background-color: rgba(255,255,255, 0.8);
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    &:hover, &:focus {
+        .Work-item_hover {
+            opacity: 1;
+        }
+        .Work-item_name {
+            opacity: 0;
+        }
+    }
+}
+
+.Work-item_name {
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, .75);
+    opacity: 1;
+    transition: opacity 0.3s;
+    text-align: center;
+    margin: 0;
+    color: @white;
+}
+
+.Work-item_overlay {
+    .padding();
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.Work-item_hover {
+    background: rgba(255, 0, 0, 0.4);
+    opacity: 0;
+    transition: all 0.3s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.Work-item_hover_content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.Work-item_hover_info {
+    .padding();
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    font-weight: @font-weight_bold;
+    text-transform: uppercase;
+    margin: 0;
+    color: @white;
+    width: 100%;
+}
+
+.Work-item_hover_icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: @white;
+    color: @teal;
+    border-radius: 100%;
+    padding: 13px 10px 10px 13px;
+}
+
+
+.Work-item_hover_icon {
+    i {
+        &:before {
+            font-size: 20px;
+        }
+    }
+}

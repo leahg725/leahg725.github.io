@@ -1,0 +1,119 @@
+@keyframes scrollWheel {
+    0%  {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+}
+
+.Intro {
+    .section-padding(@pt: 40px; @ptbp: 60px; @pbbp: 60px);
+    display: flex;
+    align-items: center;
+    background-color: @teal;
+    color: @white;
+    margin-top: 50px;
+}
+
+.Intro-image_wrapper{
+    .col-with_margins(6; min; @vp-hh);
+    .col-with_margins--offset(3; min; @vp-hh);
+    .col-with_margins(3.5; min; @vp-sm);
+    .col-with_margins--offset(4.25; min; @vp-sm);
+    .col-with_margins(2; min; @vp-lg);
+    .col-with_margins--offset(5; min; @vp-lg);
+}
+
+.Intro-image {
+    width: 100%;
+    height: auto;
+    border: 3px solid @red;
+    border-radius: 100%;
+}
+
+.Intro-content_wrapper {
+    .col-with_margins(10; min; @vp-sm);
+    .col-with_margins--offset(1; min; @vp-sm);
+    .col-with_margins(8; min; @vp-lg);
+    .col-with_margins--offset(2; min; @vp-lg);
+    text-align: center;
+    clear: both;
+}
+
+.Intro-heading {
+    .underline;
+    margin: 0;
+    padding-top: 10px;
+    @media (min-width: @vp-lg) {
+        padding-top: 0;
+    }
+}
+
+.Intro-subheading {
+    font-family: @font-family;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.Intro-contact_info {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.Intro-contact_link {
+    .link-revert();
+    .button-primary();
+    i {
+        &:before {
+            font-size: 20px;
+            margin-right: 5px;
+        }
+    }
+}
+
+.Intro-scroll_wrapper {
+    .margin();
+    text-align: center;
+    clear: both;
+}
+
+.Intro-scroll {
+    display: inline-block;
+    height: 50px;
+    width: 30px;
+    border-radius: 50px;
+    border: 2px solid @white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    position: relative;
+    @media (min-width: @vp-lg) {
+        margin-top: 50px;
+    }
+}
+
+.Intro-scroll_link {
+    .link-revert();
+}
+
+.Intro-scroll_wheel {
+    width: 3px;
+    height: 7px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    background-color: @white;
+    animation-name: scrollWheel;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    opacity: 1;
+    animation-delay: .5s;
+}

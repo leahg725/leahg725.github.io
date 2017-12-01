@@ -1,0 +1,51 @@
+.underline(@mt: 10px; @mtbp: 5px; @bg: @white) {
+    &:after {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 2px;
+        margin: @mt auto 0 auto;
+        background-color: @bg;
+        @media (min-width: @vp-sm) {
+            margin-top: @mtbp;
+        }
+    }
+}
+
+.no-margin {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.no-vertical-margin {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.margin(@ml: 15px; @mr: 15px) {
+    margin-left: @ml;
+    margin-right: @mr;
+}
+
+.padding(@pl: 15px; @pr: 15px) {
+    padding-left: @pl;
+    padding-right: @pr;
+}
+
+.section-padding(@vp: @vp-sm; @pt: 40px; @pb: 40px; @ptbp: 80px; @pbbp: 80px) {
+    padding-top: @pt;
+    padding-bottom: @pb;
+    @media (min-width: @vp) {
+        padding-top: @ptbp;
+        padding-bottom: @pbbp;
+    }
+}
+
+.section-margin(@vp: @vp-sm; @mt: 40px; @mb: 40px; @mtbp: 80px; @mbbp: 80px) {
+    margin-top: @mt;
+    margin-bottom: @mb;
+    @media (min-width: @vp) {
+        margin-top: @mtbp;
+        margin-bottom: @mbbp;
+    }
+}

@@ -1,0 +1,45 @@
+@columns: 12;
+@margin_width: 30px;
+@padding_width: 30px;
+@emulation_width: @vp-md;
+
+.col(@col-width; min; @min-bp: 0px; @margin_width: @margin_width; @float: left; @parent_width: 100%) {
+    min-height: 1px;
+
+    @media (min-width: @min-bp) {
+        float: @float;
+        width: (@col-width / @columns * @parent_width);
+    }
+}
+
+.col-offset(@col-width; min; @min-bp: 0px; @margin_width: @margin_width; @parent_width: 100%) {
+    @media (min-width: @min-bp) {
+        margin-left: (@col-width / @columns * @parent_width);
+    }
+}
+
+.col-padding_offset(@col-width; min; @min-bp: 0px; @margin_width: @padding_width; @parent_width: 100%) {
+    @media (min-width: @min-bp) {
+        padding-left: (@col-width / @columns * @parent_width);
+    }
+}
+
+.col-with_margins(@col-width; min; @min-bp: 0px; @margin_width: @margin_width; @float: left; @parent_width: 100%) {
+    margin-left: (@margin_width / 2);
+    margin-right: (@margin_width / 2);
+
+    min-height: 1px;
+
+    @media (min-width: @min-bp) {
+        float: @float;
+        width: ((@emulation_width * @col-width / @columns - @margin_width) / @emulation_width * @parent_width);
+        width: ~"calc("(@col-width / @columns * @parent_width)~"-"@margin_width~")";
+    }
+}
+
+.col-with_margins--offset(@col-width; min; @min-bp: 0px; @margin_width: @margin_width; @parent_width: 100%) {
+    @media (min-width: @min-bp) {
+        margin-left: (@col-width / @columns * @emulation_width + @margin_width / 2);
+        margin-left: ~"calc("(@col-width / @columns * @parent_width)~"+"(@margin_width / 2)~")";
+    }
+}

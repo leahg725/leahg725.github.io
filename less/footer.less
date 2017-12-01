@@ -1,0 +1,33 @@
+.Footer {
+    .padding();
+    .section-padding(@pt: 20px; @pb: 20px; @ptbp: 20px; @pbbp: 20px);
+    background-color: @white;
+    text-align: center;
+    clear: both;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Footer-copyright {
+    .p;
+    margin: 0;
+}
+
+.Footer-social {
+    .reset-list;
+    display: flex;
+    justify-content: center;
+    margin: 0 -15px;
+}
+
+.Footer-social_item {
+    margin: 0 15px;
+    a {
+        .link-revert();
+        .link-primary();
+        &:before {
+            font-size: 25px;
+        }
+    }
+}
