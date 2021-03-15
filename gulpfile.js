@@ -31,9 +31,9 @@ gulp.task('less', function() {
 });
 
 gulp.task('watch:less', function () {
-    return gulp.watch('./less/*.less', ["less"]);
+    return gulp.watch('./less/*.less', gulp.series("less"));
 });
 
 
-gulp.task('watch', ['watch:less']);
-gulp.task('default', ['less', 'watch']);
+gulp.task('watch', gulp.series('watch:less'));
+gulp.task('default', gulp.parallel('less', 'watch'));

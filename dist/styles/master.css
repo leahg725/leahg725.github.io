@@ -139,6 +139,69 @@
 .Footer-social_item a:before {
   font-size: 25px;
 }
+.Email {
+  background-color: #4FD5D6;
+}
+.Email-container {
+  padding: 0 0 40px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .Email-container {
+    padding: 0 0 60px;
+  }
+}
+.Email-link {
+  text-decoration: none;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  background-color: #CDFFFF;
+  color: #FF0000;
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 2px solid #FF0000;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+@media (min-width: 1200px) {
+  .Email-link {
+    padding: 15px;
+    font-size: 16px;
+  }
+}
+.Email-link i {
+  position: absolute;
+  -webkit-transform: translate(-45px, 25px);
+          transform: translate(-45px, 25px);
+  display: inline-block;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.Email-link span {
+  display: inline-block;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.Email-link:hover,
+.Email-link:focus {
+  padding-right: 35px;
+}
+.Email-link:hover span,
+.Email-link:focus span {
+  -webkit-transform: translateX(25px);
+          transform: translateX(25px);
+}
+.Email-link:hover i,
+.Email-link:focus i {
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+}
+.Email-link i:before {
+  font-size: 20px;
+  margin-right: 5px;
+}
 .no-margin {
   margin-left: 0;
   margin-right: 0;
@@ -313,57 +376,6 @@
   padding-top: 30px;
   text-align: center;
 }
-.Intro-contact_link {
-  text-decoration: none;
-  display: inline-block;
-  overflow: hidden;
-  position: relative;
-  background-color: #CDFFFF;
-  color: #FF0000;
-  padding: 10px 15px;
-  font-size: 14px;
-  border-radius: 5px;
-  border: 2px solid #FF0000;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-@media (min-width: 1200px) {
-  .Intro-contact_link {
-    padding: 15px;
-    font-size: 16px;
-  }
-}
-.Intro-contact_link i {
-  position: absolute;
-  -webkit-transform: translate(-45px, 25px);
-          transform: translate(-45px, 25px);
-  display: inline-block;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-.Intro-contact_link span {
-  display: inline-block;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-.Intro-contact_link:hover,
-.Intro-contact_link:focus {
-  padding-right: 35px;
-}
-.Intro-contact_link:hover span,
-.Intro-contact_link:focus span {
-  -webkit-transform: translateX(25px);
-          transform: translateX(25px);
-}
-.Intro-contact_link:hover i,
-.Intro-contact_link:focus i {
-  -webkit-transform: translate(0px, 0px);
-          transform: translate(0px, 0px);
-}
-.Intro-contact_link i:before {
-  font-size: 20px;
-  margin-right: 5px;
-}
 .Intro-scroll_wrapper {
   margin-left: 15px;
   margin-right: 15px;
@@ -404,8 +416,8 @@
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   opacity: 1;
-  -webkit-animation-delay: .5s;
-          animation-delay: .5s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 .link-home {
   font-family: 'Pacifico', cursive;
