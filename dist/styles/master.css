@@ -6,6 +6,73 @@
           appearance: none;
   padding: 0;
 }
+.Button-wrapper {
+  clear: both;
+  text-align: center;
+  padding-top: 30px;
+}
+.Resume-download_link,
+.Email-link {
+  background: transparent;
+  border-width: 0px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 0;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  background-color: #FFFFFF;
+  color: #7d4578;
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 2px solid #0C1713;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+@media (min-width: 1200px) {
+  .Resume-download_link,
+  .Email-link {
+    padding: 15px;
+    font-size: 16px;
+  }
+}
+.Resume-download_link i,
+.Email-link i {
+  position: absolute;
+  -webkit-transform: translate(-45px, 25px);
+          transform: translate(-45px, 25px);
+  display: inline-block;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.Resume-download_link span,
+.Email-link span {
+  display: inline-block;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.Resume-download_link:hover,
+.Email-link:hover,
+.Resume-download_link:focus,
+.Email-link:focus {
+  padding-right: 35px;
+}
+.Resume-download_link:hover span,
+.Email-link:hover span,
+.Resume-download_link:focus span,
+.Email-link:focus span {
+  -webkit-transform: translateX(25px);
+          transform: translateX(25px);
+}
+.Resume-download_link:hover i,
+.Email-link:hover i,
+.Resume-download_link:focus i,
+.Email-link:focus i {
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+}
 /**
  * For modern browsers
  * 1. The space content is one way to avoid an Opera bug when the
@@ -811,63 +878,6 @@ th {
 *:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-.Resume-download_link_wrapper {
-  padding-top: 30px;
-  text-align: center;
-  clear: both;
-}
-.Resume-download_link {
-  background: transparent;
-  border-width: 0px;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  padding: 0;
-  display: inline-block;
-  overflow: hidden;
-  position: relative;
-  background-color: #FFFFFF;
-  color: #7d4578;
-  padding: 10px 15px;
-  font-size: 14px;
-  border-radius: 5px;
-  border: 2px solid #0C1713;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-@media (min-width: 1200px) {
-  .Resume-download_link {
-    padding: 15px;
-    font-size: 16px;
-  }
-}
-.Resume-download_link i {
-  position: absolute;
-  -webkit-transform: translate(-45px, 25px);
-          transform: translate(-45px, 25px);
-  display: inline-block;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-.Resume-download_link span {
-  display: inline-block;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-.Resume-download_link:hover,
-.Resume-download_link:focus {
-  padding-right: 35px;
-}
-.Resume-download_link:hover span,
-.Resume-download_link:focus span {
-  -webkit-transform: translateX(25px);
-          transform: translateX(25px);
-}
-.Resume-download_link:hover i,
-.Resume-download_link:focus i {
-  -webkit-transform: translate(0px, 0px);
-          transform: translate(0px, 0px);
 }
 body {
   width: 100%;
