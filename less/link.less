@@ -2,7 +2,7 @@
     text-decoration: none;
 }
 
-.link-primary(@color: @red; @size: 18px; @hover_color: @teal; @pseudo_color: @teal) {
+.link-primary(@color: @black; @size: 18px; @hover_color: @purple; @pseudo_color: @purple) {
     color: @color;
     font-size: @size;
     transition: color 0.5s;
@@ -29,7 +29,7 @@
 
 .link-home {
     font-family: @font-family_heading;
-    color: @red;
+    color: @black;
     font-size: 18px;
     transition: color 0.5s;
     display: inline-block;
@@ -44,12 +44,12 @@
         transform: translateX(-50%);
         height: 2px;
         width: 0;
-        background-color: @teal;
+        background-color: @purple;
         bottom: -5px;
         transition: 0.5s all ease;
     }
     &:hover, &:focus {
-        color: @teal;
+        color: @purple;
         &:after {
             width: 100%;
         }
