@@ -1091,7 +1091,7 @@ ol li {
           transform: translate(-50%, -50%);
 }
 .Work-item_hover {
-  background: rgba(125, 69, 120, 0.4);
+  background: rgba(125, 69, 120, 0.6);
   opacity: 0;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
